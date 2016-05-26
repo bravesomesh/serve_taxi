@@ -1,0 +1,15 @@
+<html>
+    <title>Welcome</title>
+    <body>
+        Hello listing page
+        <ul>
+        <% movies.forEach(function(movie) { %>
+            <li style="list-style: none">
+            <video controls>
+            	<source src="movies/<%= movie %>" type="video/mp4"/>
+            </video>
+            </li>
+        <% }); %>
+        </ul>
+    </body>
+</html>
